@@ -1,0 +1,13 @@
+Questions:
+
+Where: addActivity ----- client side
+question: Having an error of ('The policy "Don't impersonate other users" (900) blocked this request, please consult the documentation https://getstream.io/docs/,"), this error persist
+
+Where: unfollowFeeds ----- server side
+question: it is not keeping the history of following.
+
+Where: adduser ----- server side
+question: The user exist, but i cant found on the dashboard
+
+where: retrivingActivities ---- server side
+question: having an error to define the lastActivitie
