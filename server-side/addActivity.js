@@ -10,7 +10,7 @@ const addActivitys = async (userId) => {
       actor: userId,
       verb: "add",
       object: "picture:10",
-      foreign_id: "picture:10",
+      foreign_id: "carolina01",
       message: "Beautiful bird!",
     });
     return add;
@@ -19,4 +19,4 @@ const addActivitys = async (userId) => {
   }
 };
 // console.log(addActivity);
-addActivitys("chris").then((r) => console.log(r));
+addActivitys("carolina").then((r) => console.log(r));

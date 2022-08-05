@@ -1,13 +1,19 @@
 Questions:
 
-Where: addActivity ----- client side
+Where: addActivity ----- client side /// OKKK!!!!
 question: Having an error of ('The policy "Don't impersonate other users" (900) blocked this request, please consult the documentation https://getstream.io/docs/,"), this error persist
 
-Where: unfollowFeeds ----- server side
-question: it is not keeping the history of following.
+Where: unfollowFeeds ----- server side /// OKKK!!!!
+question: it is not keeping the history of following. /// because 
 
-Where: adduser ----- server side
-question: The user exist, but i cant found on the dashboard
+Where: adduser ----- server side /// OKKK!!!!
+question: The user exist, but i cant found on the dashboard //// because they dont appear at the dashboard
 
-where: retrivingActivities ---- server side
-question: having an error to define the lastActivitie
+where: retrivingActivities ---- server side /// OKKK!!!!
+question: having an error to define the lastActivitie /// need to give the last activity, on the dashboard
+
+where: retrivingActivities ---- server side /// OKKK!!!!
+question: Asking to define a ranking? 'You have not yet configured any ranking methods for feed popularity. Use the dashboard to add ranking methods.', /// need to define a ranking on the dashboard
+
+where: retrivingActivities ---- server side   /// OKKK!!!!
+question: show the output and ask about enrichement, changed a little the output, but what real does?  
