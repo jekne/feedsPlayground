@@ -1,26 +1,30 @@
-import serverClient from "../server-side/serverClient.js";
+import client from "./client.js";
+import createToken from "../server-side/createToken.js";
+const userId = "luigi";
+const token = createToken(userId);
 
 //create a user
 const createUser = async (userId) => {
   try {
-    const create = serverClient.user(userId).create({
+    const create = client.user(userId, token).create({
       name: userId,
       occupation: "Senior Developer",
       gender: "male",
     });
+    console.log("TOKENNNNNN", token);
     return create;
   } catch (error) {
     console.log("error", error);
   }
 };
 
-createUser("new").then((r) => console.log(r));
+createUser("luigi").then((r) => console.log(r));
 
 // get or create a new user, if the user already exist the user is returned
 
-const returnExistingUser = async () => {
+const returnExistingUser = async (userId) => {
   try {
-    const get = serverClient.user("jeronimo").getOrCreate({
+    const get = client.user(userId).getOrCreate({
       name: "John Doe",
       occupation: "Software Engineer",
       gender: "male",
@@ -31,5 +35,4 @@ const returnExistingUser = async () => {
   }
 };
 
-// returnExistingUser().then((r) => console.log(r));
-//
+// returnExistingUser("jeronimo").then((r) => console.log(r));

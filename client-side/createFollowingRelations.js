@@ -1,9 +1,9 @@
-import serverClient from "./serverClient.js";
+import client from "./client.js";
 
 //On the dashboard: Jack will follows chris and on the side of chris he will be followed (followers) by jack but not following jack
 const createFollowingRelations = async () => {
   try {
-    const jack = serverClient.feed("another", "jack");
+    const jack = client.feed("user", "rodrigo");
     const relations = await jack.follow("user", "chris");
     console.log(" relations ", relations);
     return relations;
@@ -13,4 +13,3 @@ const createFollowingRelations = async () => {
 };
 
 createFollowingRelations().then((r) => console.log(r));
-//

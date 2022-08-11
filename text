@@ -17,3 +17,18 @@ question: Asking to define a ranking? 'You have not yet configured any ranking m
 
 where: retrivingActivities ---- server side   /// OKKK!!!!
 question: show the output and ask about enrichement, changed a little the output, but what real does?  
+
+where: addUser ---- client side  // OKKK!!
+question: i can get a user that already exists but not create a new one ("403:"'You do not have permission to do this, you got this error because there are no policies allowing this request on this application. Please consult the documentation https://getstream.io/docs/'," ) 
+
+where: readTimeline ---- client side   
+question: I can read the timeline, on the output (every one appear actor :[Object], just chris not.... realtion on clg. with jack)????
+
+where: addReactions ---- client side   
+question: output working, not appearing in the dashboard?????
+
+where: addReactions ---- server side  
+question: undefined ???
+
+where: addReactions ---- client side (addReactionFullExample) 
+question:  Cannot read properties of undefined (reading '0')
