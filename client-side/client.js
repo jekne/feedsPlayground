@@ -7,7 +7,7 @@ dotenv.config({ path: "./.env" });
 const app_key = process.env["APP_KEY"];
 const secret = process.env["API_SECRET"];
 const appId = process.env["APP_ID"];
-const userId = "Jack";
+const userId = "johann";
 const token = createToken(userId);
 // instantiate a new client (server side)
 // const client = stream.connect(app_key, secret);

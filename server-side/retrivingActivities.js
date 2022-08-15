@@ -63,7 +63,6 @@ const sortedByRank = async (userId) => {
   }
 };
 // sortedByRank("carolina").then((r) => console.log(r));
-// user1
 
 // // Get the 5 activities and enrich them with reactions and collections
 // with enrichement i am gonna receive all the data from the user
@@ -93,7 +92,7 @@ const enrichActivities = async (userId) => {
 // function activitiesError(errorData) {
 //   console.log(errorData);
 // }
-
+//
 // enrichement:
 // // {
 //       actor: [Object],

@@ -1,6 +1,6 @@
 import client from "./client.js";
 import createToken from "../server-side/createToken.js";
-const userId = "luigi";
+const userId = "johann";
 const token = createToken(userId);
 
 //create a user
@@ -18,7 +18,7 @@ const createUser = async (userId) => {
   }
 };
 
-createUser("luigi").then((r) => console.log(r));
+createUser("johann").then((r) => console.log(r));
 
 // get or create a new user, if the user already exist the user is returned
 

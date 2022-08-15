@@ -11,6 +11,7 @@ const addComment = async (userId) => {
       { text: "awesome post!" },
       { userId }
     );
+    return comment;
   } catch (error) {
     console.log("error >>>", error);
   }

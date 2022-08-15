@@ -5,7 +5,7 @@ import client from "./client.js";
 
 const removeActivityById = async (ACTIVITY_ID) => {
   try {
-    const carolina = client.feed("user", "carolina");
+    const carolina = client.feed("user", "johann");
     const remove = await carolina.removeActivity(ACTIVITY_ID);
     return remove;
   } catch (error) {
@@ -13,7 +13,7 @@ const removeActivityById = async (ACTIVITY_ID) => {
   }
 };
 
-removeActivityById("c1e3740c-13f5-11ed-841a-020c9b49a017").then((r) =>
+removeActivityById("cdd3ce10-1c8d-11ed-8080-800109acbe1a").then((r) =>
   console.log(r)
 );
 
@@ -31,4 +31,4 @@ const removeActivityForeignID = async (foreignId) => {
   }
 };
 
-removeActivityForeignID("picture:10").then((r) => console.log(r));
+// removeActivityForeignID("picture:10").then((r) => console.log(r));

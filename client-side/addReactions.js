@@ -32,13 +32,11 @@ const addComment = async (activityId) => {
 
 const addReactionFullExample = async () => {
   try {
-    // first let's read current user's timeline feed and pick one activity
     const response = await client.feed("user", "carolina").get();
     console.log("RESPONSE >>>>>>>>>>>>>>", response);
     const activity = response.results[0];
     console.log("ACTIVITY >>>>>>>>>>>>>>", activity);
 
-    // then let's add a like reaction to that activity
     const addLike = await client.reactions.add("like", activity.id);
     return addLike;
   } catch (error) {

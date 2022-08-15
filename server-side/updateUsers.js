@@ -3,9 +3,9 @@ import serverClient from "./serverClient.js";
 const updateUser = async (userId) => {
   try {
     const update = await serverClient.user(userId).update({
-      name: "Jane Doe",
-      occupation: "Software Engineer",
-      gender: "female",
+      name: "johann",
+      occupation: "finance",
+      gender: "male",
     });
     return update;
   } catch (error) {
@@ -13,4 +13,4 @@ const updateUser = async (userId) => {
   }
 };
 
-updateUser("jeronimo").then((r) => console.log(r));
+updateUser("chris").then((r) => console.log(r));
