@@ -8,8 +8,8 @@ const createUser = async (userId) => {
   try {
     const create = client.user(userId, token).create({
       name: userId,
-      occupation: "Senior Developer",
-      gender: "male",
+      occupation: "new_one",
+      gender: "female",
     });
     console.log("TOKENNNNNN", token);
     return create;
@@ -18,7 +18,7 @@ const createUser = async (userId) => {
   }
 };
 
-createUser("johann").then((r) => console.log(r));
+// createUser("new_one").then((r) => console.log(r));
 
 // get or create a new user, if the user already exist the user is returned
 
@@ -35,4 +35,4 @@ const returnExistingUser = async (userId) => {
   }
 };
 
-// returnExistingUser("jeronimo").then((r) => console.log(r));
+returnExistingUser("new_one").then((r) => console.log(r));

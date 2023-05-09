@@ -10,4 +10,4 @@ const retrivingUsers = async (userId) => {
   }
 };
 
-retrivingUsers("johann").then((r) => console.log(r));
+retrivingUsers("new_one").then((r) => console.log(r));

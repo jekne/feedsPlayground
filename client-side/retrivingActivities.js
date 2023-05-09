@@ -90,7 +90,7 @@ const enrichActivities = async (userId) => {
 const byActivity = async () => {
   try {
     const response = await client.getActivities({
-      ids: ["faaf9f92-133a-11ed-a9f7-020c9b49a017"],
+      ids: ["d8ceb407-c094-4565-978d-1d9f6c299ae3"],
     });
     return response;
   } catch (error) {
@@ -100,6 +100,7 @@ const byActivity = async () => {
 
 byActivity().then((r) => console.log(r));
 
+// "d8ceb407-c094-4565-978d-1d9f6c299ae3";
 // // retrieve two activities by their foreign ID and time
 // const response = await client.getActivities({
 //   foreignIDTimes: [

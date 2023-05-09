@@ -6,9 +6,9 @@ import serverClient from "./serverClient.js";
 const unfollowing = async () => {
   try {
     const unfollows = [
-      { source: "timeline:1", target: "user:1" },
-      { source: "timeline:1", target: "user:2" },
-      { source: "timeline:1", target: "user:3", keep_history: true },
+      // { source: "timeline:1", target: "user:1" },
+      // { source: "timeline:1", target: "user:2" },
+      { source: "timeline:test_11", target: "public:all", keep_history: false },
     ];
 
     const unfollow = await serverClient.unfollowMany(unfollows);

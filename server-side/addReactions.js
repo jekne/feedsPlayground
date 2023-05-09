@@ -4,11 +4,11 @@ import serverClient from "./serverClient.js";
 
 const addComment = async (userId) => {
   try {
-    const activityId = "1594bcd1-13f5-11ed-a68d-069d4b3df3d5";
+    const activityId = "92be44a4-813f-11ed-8ab2-0a6b6fc19c49";
     const comment = await serverClient.reactions.add(
       "comment",
       activityId,
-      { text: "awesome post!" },
+      { text: "A nice commenr" },
       { userId }
     );
     return comment;

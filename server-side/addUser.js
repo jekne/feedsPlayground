@@ -14,7 +14,7 @@ const createUser = async (userId) => {
   }
 };
 
-createUser("stephen").then((r) => console.log(r));
+createUser("teodoro").then((r) => console.log(r));
 
 // get or create a new user, if the user already exist the user is returned
 

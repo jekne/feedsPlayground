@@ -5,8 +5,10 @@ import serverClient from "./serverClient.js";
 
 const removeActivity = async () => {
   try {
-    const chris = serverClient.feed("user", "chris");
-    const remove = await chris.removeActivity({ foreignId: "picture:10" });
+    const feed = serverClient.feed("timeline", "Akarshan");
+    const remove = await feed.removeActivity({
+      foreignId: "79d2d700-cefa-11ed-8080-80003d2dd851",
+    });
     return remove;
   } catch (error) {
     console.log("error", error);

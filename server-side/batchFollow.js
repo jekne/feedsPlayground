@@ -6,9 +6,13 @@ import serverClient from "./serverClient.js";
 const followManyFeeds = async () => {
   try {
     const follows = [
-      { source: "user:1", target: "user:1" },
-      { source: "user:1", target: "user:2" },
-      { source: "user:1", target: "user:3", activity_copy_limit: 0 },
+      {
+        source: "timeline:test_12",
+        target: "public:all",
+        activity_copy_limit: 100,
+      },
+      // { source: "user:1", target: "user:2" },
+      // { source: "user:1", target: "user:3", activity_copy_limit: 0 },
     ];
 
     const follow = await serverClient.followMany(follows);

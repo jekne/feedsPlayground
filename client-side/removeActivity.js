@@ -12,7 +12,7 @@ const removeActivityById = async (ACTIVITY_ID) => {
     console.log("error >>>", error);
   }
 };
-
+///
 removeActivityById("cdd3ce10-1c8d-11ed-8080-800109acbe1a").then((r) =>
   console.log(r)
 );

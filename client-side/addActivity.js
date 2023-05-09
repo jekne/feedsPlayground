@@ -1,6 +1,6 @@
 import client from "./client.js";
 import createToken from "../server-side/createToken.js";
-const userId = "carolina";
+const userId = "ronaldo";
 const token = createToken(userId);
 
 // // Add an Activity; message is a custom field - tip: you can add unlimited custom fields!
@@ -16,7 +16,7 @@ const token = createToken(userId);
 const addActivitys = async () => {
   try {
     // feedgroup it is user and chris userID
-    const chrisFeed = client.feed("user", "carolina", token);
+    const chrisFeed = client.feed("user", "ronaldo", token);
     // console.log("chris feed", chrisFeed);
     const add = await chrisFeed.addActivity({
       actor: "SU:carolina",

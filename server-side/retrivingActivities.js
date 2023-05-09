@@ -15,24 +15,29 @@ import serverClient from "./serverClient.js";
 
 const getActivities = async (userId) => {
   try {
-    const chris = serverClient.feed("user", userId);
-    const getAct = await chris.get({ limit: 5, offset: 0 }).then().catch();
+    //timeline johann
+    const feedToSearch = serverClient.feed("user", userId);
+    const getAct = await feedToSearch
+      .get({ limit: 100, offset: 0 })
+      .then()
+      .catch();
+    // console.log(getAct.results);
     return getAct;
   } catch (error) {
     console.log("error", error);
   }
 };
-// getActivities("carolina").then((r) => console.log(r));
-
+// getActivities("top").then((r) => console.log(r));
+// cf882600-4e2b-11ed-8080-80003e99a13d
 // Get the 5 activities added after lastActivity
 // you will gonna need the lastactivity (dashboard)
 
 const getActAfterLastAct = async (userId) => {
   try {
-    const carolina = serverClient.feed("user", userId);
-    const lastActivity = "efcffa05-1402-11ed-a68c-0620fb2c09bb";
-    const get = await carolina
-      .get({ limit: 5, id_lt: lastActivity.id })
+    const feedToCheck = serverClient.feed("user", userId);
+    const lastActivity = "cae348ff-9afd-11ed-82b9-0620fb2c09bb";
+    const get = await feedToCheck
+      .get({ limit: 5, id_te: lastActivity.id })
       .then()
       .catch();
     return get;
@@ -40,7 +45,7 @@ const getActAfterLastAct = async (userId) => {
     console.log("error >>>", error);
   }
 };
-getActAfterLastAct("carolina").then((r) => console.log(r));
+getActAfterLastAct("1905").then((r) => console.log(r));
 
 // // Get the 5 activities added before lastActivity
 
@@ -123,3 +128,5 @@ const enrichActivities = async (userId) => {
 //       time: '2022-08-04T13:02:40.698680',
 //       verb: 'add'
 //     }
+
+// 37bb60e2-6647-11ed-8080-80015e8bd6da

@@ -24,7 +24,7 @@ const addActivity = async () => {
   try {
     const feeds = ["user:carolina", "user:jack", "user:chris"];
     const activity = {
-      actor: "User:2",
+      actor: "SU:2",
       verb: "pin",
       object: "Place:42",
       target: "Board:1",
